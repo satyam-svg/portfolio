@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Pacifico&family=Poppins:wght@300;500&family=Sevillana&display=swap" rel="stylesheet');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow: hidden;
+    background-image: url('bg41.jpg');
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    line-height: 80px;
+    height: 80px;
+    z-index: 111;
+}
+.navitems{
+    display: flex;
+}
+.navitems li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navitems li a{
+    font-size: 18px;
+    color: blueviolet;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navitems li:hover a{
+    color: brown;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.wrapper::before{
+ position: absolute;
+ content: '';
+ height: 600px;
+ width: 600px;
+ border-radius: 50%;
+ left: -12%;
+ top: 40%;
+ background: linear-gradient(45deg,brown,pink);
+ animation: satyam2 6s linear infinite;
+}
+@keyframes satyam2 {
+    50%{
+        left: -13%;
+        top: 41%;
+    }
+}
+.wrapper::after{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg,brown,pink);
+    animation: satyam2 6s linear infinite;
+   }
+.cols{
+    width: 50%;
+}
+.cols0{
+    width: 60%;
+    z-index: 10;
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: cadetblue;
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: rgba(86, 226, 43, 0.921);
+}
+h1{
+    display: block;
+    font-size: 3em;
+    font-weight: 900;
+    color: #c58c16;
+}
+.multitext{
+    color: rgba(48, 216, 59, 0.737);
+    text-transform: capitalize;
+}
+p{
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: black;
+}
+.imgbox{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+.multitext2{
+    color: rgba(216, 202, 48, 0.737);
+    text-transform: capitalize;
+}
+.id1{
+    font-size: 30px;
+    color: aqua;
+}
